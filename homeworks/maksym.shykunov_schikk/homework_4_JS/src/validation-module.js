@@ -15,9 +15,7 @@ export const isValid = {
         return this.pattern(text, /^\+{1}\d{1,2}\({1}\d{3}\){1}\d{3}([-]{1}\d{2}){2}/);
     },
     numberRange(text, min, max) {
-        if (this.pattern(text, /^([0-9])+$/)) {
-            return text >= min && text <= max;
-        }
-        return false;
+        if (text === '') return true;
+        return text >= min && text <= max;
     },
 };
