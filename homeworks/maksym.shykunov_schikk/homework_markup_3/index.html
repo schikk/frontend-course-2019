@@ -21,27 +21,27 @@
                 <img src="img/logo.png" alt="tajam logo">
             </a>
             <nav class="main-header__nav">
-                <ul class="main-menu-list">
-                    <li class="main-menu-list__item">
-                        <a href="#" class="main-menu-list__item_link">HOME</a>
+                <ul class="main-menu">
+                    <li class="main-menu__item">
+                        <a href="#" class="main-menu__item_link">HOME</a>
                     </li>
-                    <li class="main-menu-list__item">
-                        <a href="#about" class="main-menu-list__item_link">ABOUT</a>
+                    <li class="main-menu__item">
+                        <a href="#about" class="main-menu__item_link">ABOUT</a>
                     </li>
-                    <li class="main-menu-list__item">
-                        <a href="#expertise" class="main-menu-list__item_link">EXPERTISE</a>
+                    <li class="main-menu__item">
+                        <a href="#expertise" class="main-menu__item_link">EXPERTISE</a>
                     </li>
-                    <li class="main-menu-list__item">
-                        <a href="#teams" class="main-menu-list__item_link">TEAMS</a>
+                    <li class="main-menu__item">
+                        <a href="#teams" class="main-menu__item_link">TEAMS</a>
                     </li>
-                    <li class="main-menu-list__item">
-                        <a href="#works" class="main-menu-list__item_link">WORKS</a>
+                    <li class="main-menu__item">
+                        <a href="#works" class="main-menu__item_link">WORKS</a>
                     </li>
-                    <li class="main-menu-list__item">
-                        <a href="#people" class="main-menu-list__item_link">PEOPLE SAY</a>
+                    <li class="main-menu__item">
+                        <a href="#people" class="main-menu__item_link">PEOPLE SAY</a>
                     </li>
-                    <li class="main-menu-list__item">
-                        <a href="#contacts" class="main-menu-list__item_link">CONTACTS</a>
+                    <li class="main-menu__item">
+                        <a href="#contacts" class="main-menu__item_link">CONTACTS</a>
                     </li>
                 </ul>
             </nav>
@@ -66,11 +66,13 @@
                 </div>
                 <div class="history__descr">
                     <h2 class="history__title section-title">OUR STORY</h2>
-                    <div class="history__text text">
-                        <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
+                    <div class="history__text">
+                        <p class="text">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor
+                            aliquet.
                             Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem
                             nibh id elit. Duis sed odio sit amet nibh vulputate cursus</p>
-                        <p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non
+                        <p class="text">Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare
+                            odio. Sed non
                             mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora
                             torquent per conubia nostra, per inceptos himenaeos.</p>
                     </div>
@@ -80,23 +82,15 @@
         </section>
         <section class="story bg-overlay">
             <a href="#" class="btn-watch">
-                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="Play_Icon"
-                    data-name="Play Icon" width="103" height="103" viewBox="0 0 103 103">
-                    <defs>
-                        <style>
-                            .cls-1 {
-                                fill: none;
-                                stroke: #fff;
-                                stroke-width: 3px;
-                            }
-                        </style>
-                    </defs>
+                <svg class="btn-watch__svg" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" id="Play_Icon" data-name="Play Icon" width="103"
+                    height="103" viewBox="0 0 103 103">
                     <circle id="outline" class="cls-1" cx="51.5" cy="51.5" r="50" />
                     <image id="play" x="36.5" y="28.5" width="37" height="45"
                         xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACUAAAAtCAYAAAApzaJuAAACwElEQVRYhcXZX2hPYRzH8Y81yoobZf6lXJh/oYgkN0jTFFrUSKj5kxS5cKUoWaEl5UYuRqJdiPzd/Ffyc8GNYrYllHYxYhckSe2tZz1nnc6e57f9fr/zO8+3vr+L55zf2Wvf77PnPOdMwBQgB3wH2oGVgEKm+bjL0DgPjA8FMx+/HSgTvcDOEKgKaSBdUS3poqR2SbM855QlDOifvTCSHkjqTfygtZI6JR3LTAX8jLVsBTAOuOVp6TtgTRZzKo7aHTtYD3zw4FqACVmhGhMnVADHPbA+YFcIVJRz87T0ETA/BCrKzcBnD+5EKJTJ0Rbgii6gLgQq3tI2D+4qUF0syrdwjiTeS6qT1CCpJ3H+VkndkvalsU4VUql4VgHNnqo9BhZl1T5XLgDue3AngVEhUFHuAHocsE5gQyjUcC1tBSaHQEW5BHjogP0CDoRCRbkd+OrA5Sx88NxSloRC47KkGklnE99bLumVpGZJY9JcEopp6VNH1T4BNVlWKh6vJa2S1Gg3kP322AxJN0KhomiRtFrSt9jYvNCobZLaJE2MjXVUBsIslHRKUm1i3NxDN2VdqSqLeeMAnZM0W1JXlpVqsH/2UxPjZtIfkpSLBrKolGnVPUmtCdBfSYclLY2DBqKM65TZoTZ57n3XgelZ3/u22IUwGR/tPj/v99NGzQFue6pzxlZv2OukhcrXqufAskKulwaq3tMq8zbnYDG/ZCko8zRz01Md8zQzrdhpUAzK7LOPejBmIm8scV4WjFoPdHtAp4HKUkGFoGYC1zwYM5EXp4EpBHUE6HdgzB57f5oYH2pP7OA6oMNTnSvApHKAXCjzJm9snlZ1W2xZMC6UadEd4IsH1DTSJ9w0UH88iCiepP1SbLisiG3ak9Enaa/dQ7/NYIszGAb1zDF+yT6jXcgSMxj2fzMvgR/AC6A2y1YNSdB/IZYgsGBnsLcAAAAASUVORK5CYII=" />
                 </svg>
+                <span class="btn-watch__text">WATCH OUR STORY</span>
             </a>
-            <span class="btn-watch__text">WATCH OUR STORY</span>
         </section>
         <section class="expertise" id="expertise">
             <div class="wrapper">
@@ -420,15 +414,15 @@
                 </div>
             </div>
             <div class="footer-bottom-row">
-                <ul class="main-menu-list">
-                    <li class="main-menu-list__item">
-                        <a href="#" class="main-menu-list__item_link">HELP</a>
+                <ul class="main-menu">
+                    <li class="main-menu__item">
+                        <a href="#" class="main-menu__item_link">HELP</a>
                     </li>
-                    <li class="main-menu-list__item">
-                        <a href="#about" class="main-menu-list__item_link">TERMS & CONDITION</a>
+                    <li class="main-menu__item">
+                        <a href="#about" class="main-menu__item_link">TERMS & CONDITION</a>
                     </li>
-                    <li class="main-menu-list__item">
-                        <a href="#expertise" class="main-menu-list__item_link">PRIVACY</a>
+                    <li class="main-menu__item">
+                        <a href="#expertise" class="main-menu__item_link">PRIVACY</a>
                     </li>
                 </ul>
                 <p class="main-footer__copyright">Copyright © 2019 - Tajem Creative</p>
